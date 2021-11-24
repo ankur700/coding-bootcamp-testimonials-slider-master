@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,85 +20,81 @@
     <link type="text/css" rel="stylesheet" href="./reset.css" />
     <link type="text/css" rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main class="main relative">
-      <div id="slider" class="slider">
-        <div class="slide">
-          <div class="image relative">
-            <div class="top-image-1 absolute"></div>
-          </div>
-          <div class="navigation absolute flex">
-            <img id="prev" src="./images/icon-prev.svg" alt="previous-icon" />
-            <img id="next" src="./images/icon-next.svg" alt="next-icon" />
-          </div>
-          <div class="text flex justify-center items-center relative">
-            <div class="content flex flex-column">
-              <div class="testimonial">
-                “ I’ve been interested in coding for a while but never taken the
-                jump, until now. I couldn’t recommend this course enough. I’m
-                now in the job of my dreams and so excited about the future. ”
-              </div>
-              <div class="test-by flex flex-column">
-                <div class="name">Tanya Sinclair</div>
-                <div class="position">UX Engineer</div>
+    <div class="main relative">
+      <div class="carousel">
+        <div id="inner" class="inner">
+          <div class="item">
+            <div class="wrapper">
+              <div class="image relative">
+                <div class="top-image-1 absolute"></div>
+                <div class="navigation absolute flex">
+                  <img src="./images/icon-prev.svg" alt="previous-icon" />
+                  <img id="next" src="./images/icon-next.svg" alt="next-icon" />
+                </div>
               </div>
 
-              <div class="quote absolute">
-                <img src="images/pattern-quotes.svg" alt="quotes-icon" />
+              <div class="text flex justify-center items-center relative">
+                <div class="content flex flex-column">
+                  <h3 class="testimonial">
+                    “ I’ve been interested in coding for a while but never taken
+                    the jump, until now. I couldn’t recommend this course
+                    enough. I’m now in the job of my dreams and so excited about
+                    the future. ”
+                  </h3>
+                  <div class="test-by flex flex-column">
+                    <p class="name">Tanya Sinclair</p>
+                    <p class="position">UX Engineer</p>
+                  </div>
+
+                  <div class="quote absolute">
+                    <img src="images/pattern-quotes.svg" alt="quotes-icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wrapper">
+              <div class="image relative">
+                <div class="top-image-2 absolute"></div>
+                <div class="navigation absolute flex">
+                  <img
+                    id="prev"
+                    src="./images/icon-prev.svg"
+                    alt="previous-icon"
+                  />
+                  <img src="./images/icon-next.svg" alt="next-icon" />
+                </div>
+              </div>
+
+              <div class="text flex justify-center items-center relative">
+                <div class="content flex flex-column">
+                  <h3 class="testimonial">
+                    “ If you want to lay the best foundation possible I’d
+                    recommend taking this course. The depth the instructors go
+                    into is incredible. I now feel so confident about starting
+                    up as a professional developer. ”
+                  </h3>
+                  <div class="test-by flex flex-column">
+                    <p class="name">John Tarkpor</p>
+                    <p class="position">Junior Front-end Developer</p>
+                  </div>
+
+                  <div class="quote absolute">
+                    <img src="images/pattern-quotes.svg" alt="quotes-icon" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="slide">
-          <div class="image relative">
-            <div class="top-image-2 absolute"></div>
-          </div>
-          <div class="navigation absolute flex">
-            <img id="prev" src="./images/icon-prev.svg" alt="previous-icon" />
-            <img id="next" src="./images/icon-next.svg" alt="next-icon" />
-          </div>
-          <div class="text flex justify-center items-center relative">
-            <div class="content flex flex-column">
-              <div class="testimonial">
-                “ If you want to lay the best foundation possible I’d recommend
-                taking this course. The depth the instructors go into is
-                incredible. I now feel so confident about starting up as a
-                professional developer. ”
-              </div>
-              <div class="test-by flex flex-column">
-                <div class="name">John Tarkpor</div>
-                <div class="position">Junior Front-end Developer</div>
-              </div>
-
-              <div class="quote absolute">
-                <img src="images/pattern-quotes.svg" alt="quotes-icon" />
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
       <div class="curve absolute">
         <img src="./images/pattern-curve.svg" alt="curve pattern" />
       </div>
-    </main>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </div>
   </body>
   <script type="text/javascript" src="./scripts.js"></script>
 </html>
