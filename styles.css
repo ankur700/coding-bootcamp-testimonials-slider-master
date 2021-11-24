@@ -76,9 +76,6 @@ img {
 }
 
 /* component css */
-.main {
-  /* height: 100vh; */
-}
 
 .carousel {
   overflow: hidden;
@@ -145,7 +142,7 @@ img {
 
 .content {
   gap: 0.25rem;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   margin-top: 3rem;
   text-align: center;
 }
@@ -157,10 +154,9 @@ img {
 .testimonial {
   margin-bottom: 1rem;
   color: hsl(var(--clr-dark-blue));
-  font-size: var(--fs-body);
   font-weight: var(--fw-300);
   line-height: 1.3;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .name,
 .position {
@@ -187,19 +183,12 @@ img {
   height: 65px;
 }
 @media only screen and (min-width: 800px) {
-  .main {
-    height: 100vh;
-    align-items: center;
-  }
-  .carousel {
-    padding-inline: 7rem;
-  }
-
-  .item {
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
     justify-self: center;
+    padding: 2rem 5rem;
   }
 
   .text {
