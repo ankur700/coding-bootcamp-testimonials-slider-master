@@ -77,23 +77,28 @@ img {
 
 /* component css */
 .main {
-  height: 100vh;
+  /* height: 100vh; */
+}
+
+.carousel {
   overflow: hidden;
-  margin: auto 0;
 }
 
-.slider {
-  padding-inline: 1.5rem;
-  padding-block-start: 1rem;
-  padding-block-end: 0.5rem;
-=
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
 }
 
-.slide {
-  display: flex;
-  flex-direction: column;
+.item {
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
+
+.wrapper {
+  width: 100%;
+}
+
 .image {
   background-image: url("./images/pattern-bg.svg");
   background-size: contain;
@@ -103,25 +108,25 @@ img {
   width: 100%;
 }
 .top-image-1 {
-  background-image: url(./images/image-tanya.jpg);
+  background-image: url("./images/image-tanya.jpg");
 }
 .top-image-2 {
-  background-image: url(./images/image-john.jpg);
+  background-image: url("./images/image-john.jpg");
 }
 .top-image-1,
 .top-image-2 {
   top: 10%;
   left: 22%;
   height: 12.25rem;
-  width: 58%;
+  width: 55%;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
   /* box-shadow: 0px 5px 20px 2px hsl(var(--clr-dark-blue) / 0.3); */
 }
 .navigation {
-  top: 42%;
-  left: 43%;
+  bottom: 3%;
+  left: 42%;
   background: hsl(var(--clr-white));
   width: 65px;
   justify-content: space-between;
@@ -143,6 +148,10 @@ img {
   padding-inline: 1rem;
   margin-top: 3rem;
   text-align: center;
+}
+
+.text {
+  white-space: normal;
 }
 
 .testimonial {
@@ -182,11 +191,11 @@ img {
     height: 100vh;
     align-items: center;
   }
-  .slider {
+  .carousel {
     padding-inline: 7rem;
   }
 
-  .slide {
+  .item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
